@@ -92,6 +92,14 @@
             &.active{
                 transform: rotateY(180deg);
 
+                .card-1{
+                    .num-card, .expired, .name{
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
+                    }
+
+                }
+                
                 .card-2{
                     -webkit-backface-visibility: visible;
                     backface-visibility: visible;
